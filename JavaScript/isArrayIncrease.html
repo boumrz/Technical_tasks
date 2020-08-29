@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Проверка на сортировку по возрастанию</title>
+    </head>
+    <body>
+        <script>
+            const a = [1, 10, 2, 6, 9, -32];
+            const b = [1, 2, 3, 4, 10, 11, 20];
+            
+            /**
+            * Are the numbers in order?
+            *
+            * @param {number[]} input The input data
+            * @returns {boolean} Returns status
+            */
+            function inAscOrder(input) {
+                let sorted = true;
+
+                for (let i = 0; i < input.length - 1; i++) {
+                    if (input[i+1] < input[i]) {
+                        return false;
+                    }
+                }
+
+                return true;
+            }
+
+            console.log(inAscOrder(b)); // true
+            console.log(inAscOrder(a)); // false
+        </script>
+    </body>
+</html>
