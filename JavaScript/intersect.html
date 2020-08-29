@@ -16,19 +16,21 @@
             * @param {number[]} b
             * @returns {number[]}
             */
-            function intersect(a, b) {
-                const objectA = a.reduce((obj, item) => {
-                    obj[item] = true;
-                    return obj;
-                }, {});
-                const objectB = b.reduce((obj, item) => {
-                    if (objectA[item] === true) {
-                        obj[item] = true;
-                    };
-                    return obj;
-                }, {});
+            function intersect(arr1, barr) {
+                let obj1 = {};
+                let result = {};
 
-                return Object.keys(objectB);
+                for (let i = 0; i < arr1.length; i++) {
+                    obj1[arr1[i]] = true;
+                }
+
+                for (let i = 0; i < barr.length; i++) {
+                    if (obj1[barr[i]] === true) {
+                        result[barr[i]] = true;
+                    }
+                }
+
+                return Object.keys(result);
             }
 
             console.log(intersect(a, b));
