@@ -1,3 +1,5 @@
+<!-- O(n) -->
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -6,7 +8,7 @@
     <body>
         <script>
             const a = [1, 10, 2, 6, 9, -32, 10, 10, -7];
-            const b = [-7, 1, 9, 8, 0, 1, 10, 2, 2, 3, 4, 5, 6, -32];
+            const b = [-7, 1, 9, 8, 0, 1, 10, 2, 2, 3, 10, 10, 4, 4, 2, 4, 5, 6, -32];
             
             /**
             * Intersect
@@ -15,19 +17,18 @@
             * @returns {number[]}
             */
             function intersect(a, b) {
-                let result = [];
-                let acc = 0;
+                const objectA = a.reduce((obj, item) => {
+                    obj[item] = true;
+                    return obj;
+                }, {});
+                const objectB = b.reduce((obj, item) => {
+                    if (objectA[item] === true) {
+                        obj[item] = true;
+                    };
+                    return obj;
+                }, {});
 
-                for (let i = 0; i < a.length; i++) {
-                    for (let j = 0; j < b.length; j++) {
-                        if (a[i] === b[j] && result.includes(a[i]) === false) {
-                            result[acc] = a[i];
-                            acc += 1;
-                        };
-                    }
-                }
-
-                return result;
+                return Object.keys(objectB);
             }
 
             console.log(intersect(a, b));
