@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Банкомат</title>
+    </head>
+    <body>
+        <script>
+            const nominals = [5000, 2000, 1000, 500, 200, 100, 50, 10];
+
+            function atm(amount, nominals) {
+                if (amount % 10 !== 0) {
+                    throw console.error('Невозможно выдать сумму');
+                };
+
+                let remainingAmount = amount;
+                let arr = [];
+                let acc = 0;
+
+                for (let i = 0; i < nominals.length;) {
+                    if (remainingAmount >= nominals[i]) {
+                        acc += 1;
+                        remainingAmount -= nominals[i];
+
+                        arr[i] = `${nominals[i]}x${acc}`;
+
+                        continue;
+                    }
+
+                    acc = 0;
+                    i++;
+                }
+
+                if (remainingAmount === 0) {
+                    return arr.filter(Boolean);
+                }
+            }
+
+            console.log(atm(12225100, nominals));
+        </script>
+    </body>
+</html>
