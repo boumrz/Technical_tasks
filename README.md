@@ -1,8 +1,8 @@
-Промсвязьбанк - https://qr.nspk.ru/proxyapp/logo/bank100000000010.png
-ПАО СКБ - банк - https://qr.nspk.ru/proxyapp/logo/bank100000000003.png
-АО ГАЗЭНЕРГОБАНК - https://qr.nspk.ru/proxyapp/logo/bank100000000043.png
-ПАО АКБ АВАНГАРД - https://qr.nspk.ru/proxyapp/logo/bank100000000028.png
-ООО ПНКО ЭЛПЛАТ - https://qr.nspk.ru/proxyapp/logo/bank100000000086.png
+* Промсвязьбанк - https://qr.nspk.ru/proxyapp/logo/bank100000000010.png
+* ПАО СКБ - банк - https://qr.nspk.ru/proxyapp/logo/bank100000000003.png
+* АО ГАЗЭНЕРГОБАНК - https://qr.nspk.ru/proxyapp/logo/bank100000000043.png
+* ПАО АКБ АВАНГАРД - https://qr.nspk.ru/proxyapp/logo/bank100000000028.png
+* ООО ПНКО ЭЛПЛАТ - https://qr.nspk.ru/proxyapp/logo/bank100000000086.png
 
 # Technical tasks
 
