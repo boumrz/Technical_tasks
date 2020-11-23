@@ -1,4 +1,4 @@
-* Промсвязьбанк - bank100000000010://qr.nspk.ru/AD1000699B256LBP9B5PIRIU8CT71LCG?type=02&bank=100000000014&sum=150000&cur=RUB&crc=89C5
+* Промсвязьбанк - https://bank100000000010://qr.nspk.ru/AD1000699B256LBP9B5PIRIU8CT71LCG?type=02&bank=100000000014&sum=150000&cur=RUB&crc=89C5
 * ПАО СКБ - банк - https://qr.nspk.ru/proxyapp/logo/bank100000000003.png
 * АО ГАЗЭНЕРГОБАНК - https://qr.nspk.ru/proxyapp/logo/bank100000000043.png
 * ПАО АКБ АВАНГАРД - https://qr.nspk.ru/proxyapp/logo/bank100000000028.png
