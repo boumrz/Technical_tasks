@@ -1,3 +1,9 @@
+Промсвязьбанк - https://qr.nspk.ru/proxyapp/logo/bank100000000010.png
+ПАО СКБ - банк - https://qr.nspk.ru/proxyapp/logo/bank100000000003.png
+АО ГАЗЭНЕРГОБАНК - https://qr.nspk.ru/proxyapp/logo/bank100000000043.png
+ПАО АКБ АВАНГАРД - https://qr.nspk.ru/proxyapp/logo/bank100000000028.png
+ООО ПНКО ЭЛПЛАТ - https://qr.nspk.ru/proxyapp/logo/bank100000000086.png
+
 # Technical tasks
 
 ## 1. Реализовать работу банкомата
@@ -133,3 +139,20 @@ class DoublyLinkedList {
     }
 }
  ```
+
+ ## 6. Функцию, которая определяет количество символов в строке
+Написать функцию, которая считает количество символов и выводит результат в массиве в следующем формате:
+```js
+    const a = 'EEFDSFEERTGHJJH';
+    
+    /**
+    * counterString
+    * @param {string[]} str
+    * @returns {number[]}
+    */
+    function counterString(str) {
+        // ...
+    }
+
+    counterString(a); // ['Ex4', Fx2, Dx1, Sx1, Rx1, Tx1, Gx1, Hx2, Jx2]
+```
