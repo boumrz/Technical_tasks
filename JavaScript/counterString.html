@@ -5,32 +5,38 @@
     </head>
     <body>
         <script>
-            const a = 'EEFDDSFEERTEGHJJH';
+            // AAABBBFAAACCCCC
 
-            function counterString(str) {
-                let arr = [];
-                let result = [];
+            const rle = (str) => {
+                if (!/^[A-Za-z]/.test(str)) {
+                    throw new Error('Строка не соответствует требованиям задачи');
+                }
+                const result = [];
+                let curr = 0;
                 let acc = 0;
-                for (let i = 0; i < str.length; i++) {
-                    for (let j = 0; j < str.length; j++) {
-                        if (str[i] === str[j]) {
-                            acc += 1;
-                            arr[i] = `${str[j]}x${acc}`;
-                        }
+
+                const changeStr = str.toUpperCase();
+
+                for (let i = 0, j = 0; i < changeStr.length && j < changeStr.length;) {
+                    if (changeStr[i] === changeStr[j]) {
+                        acc += 1;
+                        result[curr] = acc === 1 ? str[i] : `${str[i]}${acc}`;
+                        j += 1;
+                        continue;
                     }
+
+                    curr += 1;
+                    i = j;
                     acc = 0;
                 }
 
-                for (let i = 0; i < arr.length; i++) {
-                    if (result.indexOf(arr[i]) === -1) {
-                        result.push(arr[i]);
-                    }
-                }
-
-                return result;
+                return result.join('');
             }
 
-            console.log(counterString(a));
+            console.log(rle('AAABBBFAAACCCCC')); // A3B3FA3C5
+            console.log(rle('A')); // A
+            console.log(rle('ffAAddE')); // 'f2A2d2E'
+            console.log(rle('1233l3ldffsdfm')); // 'error'
         </script>
     </body>
 </html>
