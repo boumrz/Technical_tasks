@@ -1,10 +1,3 @@
-* Просвязьбанк - bank100000000010://qr.nspk.ru/AD1000699B256LBP9B5PIRIU8CT71LCG?type=02&bank=100000000014&sum=150000&cur=RUB&crc=89C5
-* ПромсвязьбанкTest - https://qr.nspk.ru/AD1000699B256LBP9B5PIRIU8CT71LCG?type=02&bank=100000000014&sum=150000&cur=RUB&crc=89C5/bank100000000010.png
-* ПАО СКБ - банк - bank100000000003://qr.nspk.ru/AD1000699B256LBP9B5PIRIU8CT71LCG?type=02&bank=100000000010&sum=150000&cur=RUB&crc=89C5
-* АО ГАЗЭНЕРГОБАНК - https://qr.nspk.ru/proxyapp/logo/bank100000000043.png
-* ПАО АКБ АВАНГАРД - https://qr.nspk.ru/proxyapp/logo/bank100000000028.png
-* ООО ПНКО ЭЛПЛАТ - https://qr.nspk.ru/proxyapp/logo/bank100000000086.png
-
 # Technical tasks
 
 ## 1. Реализовать работу банкомата
